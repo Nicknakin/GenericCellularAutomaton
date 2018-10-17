@@ -14,4 +14,4 @@ run: default
 	./shapes.out
 
 clean:
-	rm -rf *.o *.out
+	rm -rf *.o *.*.gch

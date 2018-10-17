@@ -17,7 +17,7 @@ namespace GCA{
 
             //Get and Set methods
             std::vector<Cell*> getCells();
-            std::vector<Manipulator>* getManipulators();
+            std::vector<Manipulator*> getManipulators();
             
             Cell* getCell(int index);
             Cell* getCell(int y, int x);
