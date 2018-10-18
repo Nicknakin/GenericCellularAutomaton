@@ -3,7 +3,7 @@
 namespace GCA{
     Grid::Grid(int width, int height): width{width}, height{height}, size{width*height} {
         for(int i = 0; i < size; i++){
-            cells.push(new Cell(i%width, i/width, 0));
+            cells.push_back(new Cell(i%width, i/width, 0));
         }
     }
 
@@ -16,7 +16,7 @@ namespace GCA{
     }
 
     std::vector<Manipulator*> Grid::getManipulators(){
-        return manipulators
+        return manipulators;
     }
 
     Cell* Grid::getCell(int index){
@@ -24,7 +24,7 @@ namespace GCA{
     }
 
     Cell* Grid::getCell(int y, int x){
-        return cell[y*width+x];
+        return cells[y*width+x];
     }
 
     Manipulator* Grid::getManipulator(int index){

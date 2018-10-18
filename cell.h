@@ -10,10 +10,10 @@ namespace GCA{
             int getValue();
             bool getActive();
             std::vector<int> getPosition();
-            void setValue(int value);
-            void setActive(bool active);
+            void setValue(int val);
+            void setActive(bool act);
             void setPosition(int x, int y);
-            void setPosition(std::vector<int> position);
+            void setPosition(std::vector<int> pos);
 
         protected:
             std::vector<int> position;
